@@ -86,7 +86,7 @@ def get_sentry_options():
         SentryOption("release", DEFAULT_OPTIONS["release"], None),
         SentryOption("environment", DEFAULT_OPTIONS["environment"], None),
         SentryOption("server_name", DEFAULT_OPTIONS["server_name"], None),
-        SentryOption("shutdown_timeout", DEFAULT_OPTIONS["shutdown_timeout"], None),
+        SentryOption("shutdown_timeout", DEFAULT_OPTIONS["shutdown_timeout"], to_int_if_defined),
         SentryOption("integrations", DEFAULT_OPTIONS["integrations"], None),
         SentryOption(
             "in_app_include", DEFAULT_OPTIONS["in_app_include"], split_multiple
